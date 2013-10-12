@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trackmania ISEP A1</title>
+  <link rel="stylesheet" type="text/css" media="all" href="swipeMotionSlide/swiperDemo.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+</head>
+<body>
+  <div class="instructions">
+    Point your webcam at yourself and swipe your hand left or right to turn the pages of the book.
+  </div>
+  <div class="content">
+    <span class="control left">&lt;</span>
+    <div class="book">
+      <div class="one page symbol the1">
+        <div class="pageContents">
+          <img src="images/paperRacing/Tutorial-Crash.png" style="width: 350px;"/>
+          <img src="swipeMotionSlide/divider.gif" class="divider" />
+          <h3>Grass (symbol : '.')</h3>
+          When the car is on the grass, it decelerates by 1 when it's abs(x) or abs(y)
+          is more than 1. If it's already, it can stay at 1.
+          <h3>Crash (symbol : 'x')</h3>
+          When the car crashes, it adds a penalty equals to acceleration of the car; sqrt(x*x + y*y).
+          <h3>Water (symbol : 'o')</h3>
+          If the car is on water, the car can't decelerate or accelerate.
+        </div>
+      </div>
+      <div class="two page bonusFirst the2">
+        <div class="pageContents">
+          <h2>Bonus</h2>
+          <img src="swipeMotionSlide/divider.gif" class="divider" />
+          <h3>Graphical interface</h3>
+          Use Java AWT / SWING to make a beautiful graphical interface with very nice UX,
+          <h3>Artificial Intelligence</h3>
+          Make the computer made the best decision and find the best path for the car.<br/>
+          There will be a competition at the end of IA challenging each others. <br/>
+          All car will compete on a big screen inside a room of ISEP.
+          <h3>Grand Prix</h3>
+          Make more than 5 tracks where the players can drive.
+          <h3>Network</h3>
+          Using socket you can play against each others. 
+        </div>
+      </div>
+      <div class="three page bonusSecond the3">
+        <div class="pageContents">
+          <h3>More features</h3>
+          - Laps: Several lap for the player, with fuel (each move cost the distance of the acceleration in fuel)
+          and charge at stand.<br/>
+          - Overtake : A car can't be on the same place than another, so it has to be careful in the direction <br/>
+          - Surprise Packet on the road : You make the surprise ? <br/>
+          - Add sound <br/>
+          - ...
+          <h3>Example of grids</h3>
+	         <a href="tracks/gridLine.txt" target="_blank">Simple line</a>
+	         <a href="tracks/grid.txt" target="_blank">Simple Line with curve</a>
+	         <a href="tracks/grid2.txt" target="_blank">Simple Curve</a>
+	         <a href="tracks/grid2.txt" target="_blank">Sonoma Raceway</a>
+	         France, Singapour, USA, Sidney, Dakar , Brazil to come...
+        </div>
+      </div>
+      <div class="four page FirstTrackmaniaTitle the4">
+        <div class="pageContents">
+          <h1 style="text-align: center;"> TrackMania A1 </h1>
+          <img src="swipeMotionSlide/divider.gif" class="divider" />
+          <img src="images/paperRacing/Home.png" style="width: 350px;"/>
+          <img src="swipeMotionSlide/divider.gif" class="divider" />
+          <img src="images/paperRacing/Tuto1.png" style="width: 350px;"/>
+        </div>
+      </div>
+      <div class="five page SecondPage the5">
+        <div class="pageContents">
+          Each cars got a speed vector (x, y).
+          At each round, the driver can increment change both value of x and y.
+          He can increment by 1, or decrement by 1 or let the same value for x and y.<br/>
+          You have to find the best path for the car ! <br/>
+          <img src="swipeMotionSlide/divider.gif" class="divider" />
+          <img src="images/paperRacing/may_the_force_be_with_you.png" style="width: 250px;margin-left:50px;"/> 
+        </div>
+      </div>
+      <div class="six page firstTuto the6">
+        <div class="pageContents">
+          <img src="images/paperRacing/Tuto2.png" style="width: 350px;"/>
+          <img src="swipeMotionSlide/divider.gif" class="divider" />
+          <img src="images/paperRacing/Tuto4.png" style="width: 350px;"/>
+        </div>
+      </div>
+      <div class="seven page secondTuto the7">
+        <div class="pageContents">
+	        <img src="images/paperRacing/Tuto5.png" style="width: 350px;"/>
+	        <img src="swipeMotionSlide/divider.gif" class="divider" />
+          At each move, every driver choose their next position depending on the acceleration of its car.
+        </div>
+      </div>
+      <div class="eight page tutoGrass the8">
+        <div class="pageContents">
+          <img src="images/paperRacing/Tuto8.png" style="width: 350px;"/>
+          <img src="swipeMotionSlide/divider.gif" class="divider" />
+          <img src="images/paperRacing/Tutorial-Grass.png" style="width: 350px;"/>
+        </div>
+      </div>
+      <div class=" page the9">
+        <div class="pageContents">
+          new Page 9 
+        </div>
+      </div>
+      <div class=" page the10">
+        <div class="pageContents">
+          new Page 10 
+        </div>
+      </div>
+      <div class=" page the11">
+        <div class="pageContents">
+          new Page 11
+        </div>
+      </div>
+      <div class=" page the12">
+        <div class="pageContents">
+          new Page 12 
+        </div>
+      </div>
+      
+      
+    </div>
+    
+    <span class="control right" >&gt;</span>
+  </div>
+
+  <div class="footer">
+    <div>Created by ISEP - T. de Broca and B. Hugueney</div>
+    
+    <a href="http://tripleequals.blogspot.com/2012/09/webcam-swiper.html">Credit for webcam swiper</a>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="swipeMotionSlide/modernizr-2.6.2.js"></script>
+  <script src="swipeMotionSlide/webcam-swiper-0.1.js"></script>
+  <script src="swipeMotionSlide/demo.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-44677699-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
