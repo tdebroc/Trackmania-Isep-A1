@@ -9,7 +9,7 @@
   <div class="instructions">
     Point your webcam at yourself and swipe your hand left or right to turn the pages of the book.
   </div>
-  <div class="content">
+  <div class="content" style="display: none;">
     <span class="control left">&lt;</span>
     <div class="book">
       <div class="one page">
@@ -136,6 +136,9 @@
   <script src="swipeMotionSlide/modernizr-2.6.2.js"></script>
   <script src="swipeMotionSlide/webcam-swiper-0.1.js"></script>
   <script src="swipeMotionSlide/demo.js"></script>
+  <script>
+    $('.content').fadeIn();
+  </script>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
