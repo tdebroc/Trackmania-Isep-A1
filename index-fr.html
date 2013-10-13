@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trackmania ISEP A1</title>
+  <link rel="stylesheet" type="text/css" media="all" href="swipeMotionSlide/swiperDemo.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+</head>
+<body>
+  <div class="instructions">
+    Mettez-vous en face de la webcam et déplacez votre main de gauche à droite ou de droite à gauche pour faire défiler les pages.
+  </div>
+  <div class="content" style="display: none;">
+    <span class="control left">&lt;</span>
+    <div class="book">
+      <div class="one page">
+        <div class="pageContents">
+          new Page 10
+        </div>
+      </div>
+      <div class="two page">
+        <div class="pageContents">
+          new Page 11
+        </div>
+      </div>
+      <div class="three page">
+        <div class="pageContents">
+          new Page 12
+        </div>
+      </div>
+      <div class="four page">
+        <div class="pageContents">
+          <h1 style="text-align: center;"> TrackMania A1 </h1>
+          <img src="swipeMotionSlide/divider.gif" class="divider" />
+          <img src="images/paperRacing/Home.png" style="width: 350px;"/>
+          <img src="swipeMotionSlide/divider.gif" class="divider" />
+          <img src="images/paperRacing/Tuto1.png" style="width: 350px;"/>
+        </div>
+      </div>
+      <div class="five page">
+        <div class="pageContents">
+          À chaque tour t, chaque véhicule est situé à une position P(t) repérée par un couple de coordonnées (Px, Py) et a une vitesse V(t) de coordonnées (Vx, Vy). À chaque tour, le conducteur d'un véhicule choisit une accélération A (Ax, Ay) &isin; {-1,0,1}&sup2; et V(t+1)= V(t)+A(t), P(t+1)=P(t)+V(t+1). L'objectif est de suivre le meilleure trajectoire ! <br/>
+          <img src="swipeMotionSlide/divider.gif" class="divider" />
+          <img src="images/paperRacing/may_the_force_be_with_you.png" style="width: 250px;margin-left:50px;"/>
+        </div>
+      </div>
+      <div class="six page">
+        <div class="pageContents">
+          <img src="images/paperRacing/Tuto2.png" style="width: 350px;"/>
+          <img src="swipeMotionSlide/divider.gif" class="divider" />
+          <img src="images/paperRacing/Tuto4.png" style="width: 350px;"/>
+        </div>
+      </div>
+      <div class="seven page">
+        <div class="pageContents">
+	        <img src="images/paperRacing/Tuto5.png" style="width: 350px;"/>
+	        <img src="swipeMotionSlide/divider.gif" class="divider" />
+          À chaque déplacement, la position du véhicule est modifiée par le (nouveau) vecteur vitesse.
+        </div>
+      </div>
+      <div class="eight page">
+        <div class="pageContents">
+          <img src="images/paperRacing/Tuto8.png" style="width: 350px;"/>
+          <img src="swipeMotionSlide/divider.gif" class="divider" />
+          <img src="images/paperRacing/Tutorial-Grass.png" style="width: 350px;"/>
+        </div>
+      </div>
+      <div class=" page">
+        <div class="pageContents">
+          <img src="images/paperRacing/Tutorial-Crash.png" style="width: 350px;"/>
+          <img src="swipeMotionSlide/divider.gif" class="divider" />
+          <h3>Herbe (symbole : '.')</h3>
+          Quand le véhicule est sur de l'herbe, les valeurs absolues de Vx et Vy sont diminuées de 1 (si elles sont &gt; 1).
+          <h3>Accident (crash) (symbole : 'x')</h3>
+          Lors d'un accident, une pénalité de sur le temps de parcours de &radic;(x &sup2 + y &sup2) est ajoutée.
+          <h3>Eau (symbole : 'o')</h3>
+          Lorsque le véhicule est sur de l'eau, l'accélération est nulle (Ax = Ay = 0).
+        </div>
+      </div>
+      <div class=" page">
+        <div class="pageContents">
+          <h2>Bonus</h2>
+          <img src="swipeMotionSlide/divider.gif" class="divider" />
+          <h3>Interface graphique</h3>
+          Utilisez les bibliothèques a <href="https://fr.wikipedia.org/wiki/Swing_%28Java%29" target="_blank">SWING</a> ou  <href="http://www.oracle.com/technetwork/java/javafx/documentation/index.html" target="_blank">JavaFX 2.0</a> pour faire une belle interface graphique avec une interface utilisateur agréable et ergonomique.
+</br>
+Vous pouvez aussi faire une version Android !
+          <h3>Intelligence Artificielle</h3>
+          Faites en sorte qu'il soit possible de jouer contre l'ordinateur et que celui-ci joue le mieux possible, y compris sur de nouveaux circuits.
+<br/>
+          à la fin du projet, il y aura une compétition entre les AI des groupes qui auront réussi à en programmer.<br/>
+
+          <h3>Grand Prix</h3>
+          Faites plus de 5 pistes pour y jouer.
+          <h3>Jeu en réseau</h3>
+          Utilisez des sockets (ou un mode "serveur web"?) pour permettre de jouer en réseau.
+        </div>
+      </div>
+      <div class=" page">
+        <div class="pageContents">
+          <h3>Autres fonctionnalités</h3>
+          - Tours: Plusieurs tours sur un circuit, avec du carburant (consommé par chaque accélération) et arrêts au stand pour remplir un réservoire.<br/>
+          - Collisions : Les véhicules ne peuvent pas être à la même place en même temps. <br/>
+          -  Surprises sur la route : À vous d'imaginer ! <br/>
+          - Effets sonores <br/>
+          - ...
+          <h3>Exemples de circuits</h3>
+           <a href="tracks/gridLine.txt" target="_blank">Ligne simple</a>
+           <a href="tracks/grid.txt" target="_blank">Line simple avec tournant</a>
+           <a href="tracks/grid2.txt" target="_blank">Tournant simple</a>
+           <a href="tracks/grid2.txt" target="_blank">Piste de Sonoma</a>
+           France, Singapour, USA, Sidney, Dakar , Brazil à venir &hellip;
+        </div>
+      </div>
+      <div class=" page">
+        <div class="pageContents">
+          new Page 9
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <span class="control right" >&gt;</span>
+  </div>
+
+  <div class="footer">
+    <div>Créé par ISEP - T. de Broca et B. Hugueney</div>
+
+    <a href="http://tripleequals.blogspot.com/2012/09/webcam-swiper.html">Credit for webcam swiper</a>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="swipeMotionSlide/modernizr-2.6.2.js"></script>
+  <script src="swipeMotionSlide/webcam-swiper-0.1.js"></script>
+  <script src="swipeMotionSlide/demo.js"></script>
+  <script>
+    $('.content').fadeIn();
+  </script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-44677699-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
