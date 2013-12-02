@@ -58,13 +58,6 @@ Vous pouvez aussi faire une version Android !
            <a href="tracks/grid2.txt" target="_blank">Tournant simple</a>
            <a href="tracks/grid3.txt" target="_blank">Piste de Sonoma</a>
            France, Singapour, USA, Sidney, Dakar , Brazil à venir &hellip;
-           <script>
-             $(document).on('ready', function() {
-             	  $('#trackList a').each(function() {
-             	  	$(this).attr('href', $(this).attr('href').replace('https://htmlpreview.github.io/?', ''));
-             	  });
-             	})  
-           </script>
            </div>
         </div>
       </div>
@@ -127,6 +120,11 @@ Vous pouvez aussi faire une version Android !
   <script src="swipeMotionSlide/demo.js"></script>
   <script>
     $('.content').fadeIn();
+    $(document).on('ready', function() {
+    	$('#trackList a').each(function() {
+       	$(this).attr('href', $(this).attr('href').replace('https://htmlpreview.github.io/?', ''));
+       });
+     })  
   </script>
 <script type="text/javascript">
 
