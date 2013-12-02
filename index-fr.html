@@ -52,17 +52,20 @@ Vous pouvez aussi faire une version Android !
           - Effets sonores <br/>
           - ...
           <h3>Exemples de circuits</h3>
-          <style>
-          	.pageContents a {
-          		cursor: pointer;
-          		color: blue;
-          		}
-          </style>
+          <div id="trackList">
            <a href="tracks/gridLine.txt" target="_blank">Ligne simple 2 </a>
            <a href="tracks/grid.txt" target="_blank">Line simple avec tournant</a>
            <a href="tracks/grid2.txt" target="_blank">Tournant simple</a>
-           <a href="http://raw.github.com/tdebroc/Trackmania-Isep-A1/master/tracks/grid3.txt" target="_blank">Piste de Sonoma</a>
+           <a href="tracks/grid3.txt" target="_blank">Piste de Sonoma</a>
            France, Singapour, USA, Sidney, Dakar , Brazil à venir &hellip;
+           <script>
+             $(document).on('ready', function() {
+             	  $('#trackList a').each(function() {
+             	  	$(this).attr('href', $(this).attr('href').replace('https://htmlpreview.github.io/?', ''));
+             	  });
+             	})  
+           </script>
+           </div>
         </div>
       </div>
       <div class="four page">
